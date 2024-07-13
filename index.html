@@ -247,7 +247,7 @@
       <div class="content has-text-justified">
         <img src="img/op-framework.png" width="100%" alt="GUI-world Overview" class="responsive-image">
         <md-block>
-          In this work, we introduces OBSCUREPROMPT, a novel method for jailbreaking LLMs by obscuring prompts to
+          In this work, we introduces ObscurePrompt, a novel method for jailbreaking LLMs by obscuring prompts to
           enhance attack robustness, demonstrating improved effectiveness over previous methods and maintaining efficacy
           against common defenses. Specifically, there are three-fold major contributions:
           <ol>
@@ -256,7 +256,7 @@
               can significantly weaken the ethical decision boundary. This observation strongly motivates our
               jailbreaking approach. </li>
             <li><b>A novel and simple jailbreak method.</b> We introduce a novel and straightforward approach named
-              OBSCUREPROMPT to jailbreaking LLMs using obscure inputs. OBSCUREPROMPT is training-free and operates in a
+              ObscurePrompt to jailbreaking LLMs using obscure inputs. ObscurePrompt is training-free and operates in a
               black-box setting, meaning it does not require access to the internal architecture of the target LLMs.
               This approach avoids the reliance on specific prompt templates, enhancing its feasibility and robustness
               for real-world applications. </li>
@@ -294,9 +294,9 @@
               particularly in addressing “jailbreaking” attacks on aligned LLMs. Previous research predominantly relies
               on scenarios with white-box LLMs or specific and fixed prompt templates, which are often impractical and
               lack broad applicability. In this paper, we introduce a straightforward and novel method, named
-              OBSCUREPROMPT, for jailbreaking LLMs, inspired by the observed fragile alignments in Out-of-Distribution
+              ObscurePrompt, for jailbreaking LLMs, inspired by the observed fragile alignments in Out-of-Distribution
               (OOD) data. Specifically, we first formulate the decision boundary in the jailbreaking process and then
-              explore how obscure text affects LLMs’ ethical decision boundary. OBSCUREPROMPT starts with constructing a
+              explore how obscure text affects LLMs’ ethical decision boundary. ObscurePrompt starts with constructing a
               base prompt that integrates wellknown jailbreaking techniques. Powerful LLMs are then utilized to obscure
               the original prompt through iterative transformations, aiming to bolster the attack’s robustness.
               Comprehensive experiments show that our approach substantially improves upon previous methods in terms of
@@ -476,7 +476,7 @@
                           <td>0.2322</td>
                         </tr>
                         <tr>
-                          <td><strong>OBSCUREPROMPT (Ours)</strong></td>
+                          <td><strong>ObscurePrompt (Ours)</strong></td>
                           <td>0.9373</td>
                           <td><strong>0.6664</strong></td>
                           <td><strong>0.5082</strong></td>
@@ -614,7 +614,7 @@
 
                   <!-- <div class="content has-text-justified"> -->
                   <md-block>
-                    <p>(Table) Attack performance (i.e., ASR) of OBSCUREPROMPT against paraphrase defense. We
+                    <p>(Table) Attack performance (i.e., ASR) of ObscurePrompt against paraphrase defense. We
                     consider the ASR based on the prompt of all attack types included.</p>
                     <p>(Figure)  Density distribution of different queries’ PPL
                       through GPT-2. The distribution
@@ -727,7 +727,7 @@
             <p>
               our method outperforms all other methods on the Llama2-7b, Llama2-70b, ChatGPT , and GPT-4. Particularly
               for the Llama2-70b model, our method improved the performance by approximately 38%, which demonstrates the
-              effectiveness of OBSCUREPROMPT. It achieves a significantly high ASR at ChatGPT , which means the
+              effectiveness of ObscurePrompt. It achieves a significantly high ASR at ChatGPT , which means the
               potential threat of our method for proprietary LLMs.
             </p>
           </div>
@@ -824,7 +824,7 @@
               observed between the distributions of harmless queries and fully obscured harmful prompts. This overlap
               suggests that relying solely on a PPL-based filter may not provide an effective defense against such
               attacks, as it could potentially compromise the processing of benign user queries (i.e., harmless
-              queries). This also indicates that OBSCUREPROMPT is robust to PPL-filtering defender.</p>
+              queries). This also indicates that ObscurePrompt is robust to PPL-filtering defender.</p>
 
           </div>
         </div>
@@ -835,7 +835,7 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h1 class="title">BibTeX</h1>
-      <pre><code>@misc{huang2024obscurepromptjailbreakinglargelanguage,
+      <pre><code>@misc{huang2024ObscurePromptjailbreakinglargelanguage,
         title={ObscurePrompt: Jailbreaking Large Language Models via Obscure Input}, 
         author={Yue Huang and Jingyu Tang and Dongping Chen and Bingda Tang and Yao Wan and Lichao Sun and Xiangliang Zhang},
         year={2024},
