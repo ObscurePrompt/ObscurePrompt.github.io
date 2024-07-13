@@ -19,6 +19,10 @@
   font-size: 14px;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .feature h2{
   color: rgb(120, 218, 251);
   line-height: 30px;
