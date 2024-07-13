@@ -382,7 +382,7 @@
                   <ul>
                     <li class="is-active"><a title="Overall">Overall</a></li>
                     <li><a title="Attack Types">Attack Types</a></li>
-                    <li><a title="Against Paraphrase Defense">Against Paraphrase Defense</a></li>
+                    <li><a title="Robustness Against Defense">Robustness Against Defense</a></li>
                     <li><a title="Prompt Number">Prompt Number</a></li>
                   </ul>
 
@@ -610,12 +610,15 @@
                   </div>
                 </div>
 
-                <div title="Against Paraphrase Defense" class="lib_examples" id="BoardPanel3" style="display: none;">
+                <div title="Robustness Against Defense" class="lib_examples" id="BoardPanel3" style="display: none;">
 
                   <!-- <div class="content has-text-justified"> -->
                   <md-block>
-                    Attack performance (i.e., ASR) of OBSCUREPROMPT against paraphrase defense (Jain et al., 2023). We
-                    consider the ASR based on the prompt of all attack types included.
+                    <p>(Table) Attack performance (i.e., ASR) of OBSCUREPROMPT against paraphrase defense. We
+                    consider the ASR based on the prompt of all attack types included.</p>
+                    <p>(Figure)  Density distribution of different queries’ PPL
+                      through GPT-2. The distribution
+                      is visualized by Kernel Density Estimate.</p>
                   </md-block>
                   <!-- </div> -->
 
@@ -688,6 +691,8 @@
                       </tbody>
                     </table>
                   </div>
+
+                  <img src="img/obscure_prompt3.png" alt="obscure_prompt1">
                 </div>
 
                 <div title="Prompt Number" class="lib_examples" id="BoardPanel4" style="display: none;">
@@ -813,7 +818,6 @@
             <h2>PPL filtering Defense.</h2>
           </div>
           <div class="description">
-            <img src="img/obscure_prompt3.png" alt="obscure_prompt1" class="schoolLogo">
             <p>
               As depicted in Figure, it is evident that the average PPL associated with obscure harmful queries or
               prompts significantly exceeds that of harmless or original harmful queries. Moreover, an overlap is
